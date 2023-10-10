@@ -1,0 +1,4 @@
+.env
+.env_file
+.env.production
+.env.development
