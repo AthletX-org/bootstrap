@@ -4,24 +4,36 @@ services:
 
   mongo:
     image: mongo
+    container_name: mongo
     networks:
       - athletx
     ports:
       - "27017:27017"
     restart: always
-    
-  mongo-seed:
+  
+  server:
+    image: ghcr.io/athletx-org/athletx-server:latest
+    container_name: athletx-server
+    ports:
+      - "3000:3000"
     depends_on:
-      - mongo
-    image: stefanwalther/mongo-seed
-    environment:
-      - MONGODB_HOST=mongo
-      - MONGODB_PORT=27017
-    volumes:
-      - ./mongo-seed:/data
-    command: mongorestore --host mongo --port 27017 --drop --db test data/dump/test
+    - mongo
     networks:
-      - app-network
+      - athletx
+    environment:
+      - mongodb_connection_string: mongodb://mongo:27017
+    
+  client:
+    image: ghcr.io/athletx-org/athletx-client:latest
+    container_name: athletx-client
+    ports:
+      - "80:80"
+    depends_on:
+    - server
+    networks:
+      - athletx
+    environment:
+      - VUE_APP_BASE_URL: localhost:3000
 
 networks:
   athletx:
