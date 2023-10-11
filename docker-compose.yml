@@ -12,7 +12,7 @@ services:
     restart: always
   
   server:
-    image: ghcr.io/athletx-org/athletx-server:latest
+    image: ghcr.io/athletx-org/athletx-server:1.0.3
     container_name: athletx-server
     ports:
       - "3000:3000"
@@ -24,7 +24,7 @@ services:
       mongodb_connection_string: mongodb://mongo:27017
     
   client:
-    image: ghcr.io/athletx-org/athletx-client:latest
+    image: ghcr.io/athletx-org/athletx-client:1.1.1
     container_name: athletx-client
     ports:
       - "80:80"
@@ -33,7 +33,9 @@ services:
     networks:
       - athletx
     environment:
-      VUE_APP_BASE_URL: localhost:3000
+      publicPath: /
+      VUE_APP_BASE_URL: http://localhost:3000
+
 
 networks:
   athletx:
