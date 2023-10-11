@@ -21,7 +21,7 @@ services:
     networks:
       - athletx
     environment:
-      - mongodb_connection_string: mongodb://mongo:27017
+      mongodb_connection_string: mongodb://mongo:27017
     
   client:
     image: ghcr.io/athletx-org/athletx-client:latest
@@ -33,7 +33,7 @@ services:
     networks:
       - athletx
     environment:
-      - VUE_APP_BASE_URL: localhost:3000
+      VUE_APP_BASE_URL: localhost:3000
 
 networks:
   athletx:
