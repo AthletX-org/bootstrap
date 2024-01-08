@@ -24,7 +24,7 @@ services:
       mongodb_connection_string: mongodb://mongo:27017
     
   client:
-    image: ghcr.io/athletx-org/athletx-client:1.1.1
+    image: ghcr.io/athletx-org/athletx-client:1.2.0
     container_name: athletx-client
     ports:
       - "80:80"
