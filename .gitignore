@@ -2,3 +2,4 @@
 .env_file
 .env.production
 .env.development
+mongo_data/
