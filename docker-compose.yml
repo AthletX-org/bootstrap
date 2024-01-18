@@ -14,7 +14,7 @@ services:
     restart: always
   
   server:
-    image: ghcr.io/athletx-org/athletx-server:1.0.4
+    image: ghcr.io/athletx-org/athletx-server:1.0.5
     container_name: athletx-server
     ports:
       - "3000:3000"
