@@ -1,0 +1,17 @@
+{"name":"Pushup","muscle":"Chest","type":"Strength"}
+{"name":"Running","type":"Cardio"}
+{"name":"Pulley","muscle":"Back","type":"Strength"}
+{"name":"Crunh","muscle":"Abdominal","type":"Strength"}
+{"name":"Squats","muscle":"Quadriceps","type":"Strength"}
+{"name":"Deadlifts","muscle":"Hamstrings and Lower Back","type":"Strength"}
+{"name":"Bench Press","muscle":"Chest","type":"Strength"}
+{"name":"Pull-Ups","muscle":"Back (Latissimus Dorsi)","type":"Strength"}
+{"name":"Leg Press","muscle":"Quadriceps","type":"Strength"}
+{"name":"Rows","muscle":"Back (Rhomboids)","type":"Strength"}
+{"name":"Tricep Dips","muscle":"Triceps","type":"Strength"}
+{"name":"Planks","muscle":"Core (Rectus Abdominis)","type":"Strength"}
+{"name":"Russian Twists","muscle":"Obliques","type":"Strength"}
+{"name":"Lunges","muscle":"Quadriceps and Glutes","type":"Strength"}
+{"name":"Treadmill Running","muscle":"Cardiovascular","type":"Cardio"}
+{"name":"Stationary Bike","muscle":"Cardiovascular (Legs)","type":"Cardio"}
+{"name":"Jumping Jacks","muscle":"Cardiovascular (Full Body)","type":"Cardio"}
